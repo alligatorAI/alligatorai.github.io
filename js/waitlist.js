@@ -21,7 +21,7 @@ waitlist.addEventListener("submit", function(event) {
         "message": waitlist.message.value ?? ""
       }
     }).then(()=>{
-      window.location.href = "/thankyou.html";
+      waitlist.local ? window.location.href = "/jp/thankyou.html" : window.location.href = "/thankyou.html"; 
     }
         
     );
